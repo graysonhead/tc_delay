@@ -1,0 +1,10 @@
+interface: wlp2s0
+groups:
+  - name: Group1
+    ips:
+      - 10.5.5.5/32
+    netem_args: "delay 100ms 50ms 25% loss random 1%"
+  - name: Group2
+    ips:
+      - 8.8.8.8/32
+    netem_args: "delay 1000ms"
